@@ -1,10 +1,18 @@
 import { useState } from "react";
-import "./App.css";
+import Card from "./components/card";
+// Scss.js
+import React from "react";
+import "./App.scss";
+// import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
 
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Card />
+    </div>
+  );
 }
 
 export default App;
